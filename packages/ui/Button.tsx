@@ -2,6 +2,10 @@
 
 import * as React from "react";
 
-export const Button = () => {
-  return <button onClick={() => alert("boop")}>Boop</button>;
+export interface ButtonProps {
+  message?: string;
+}
+
+export const Button = ({ message = "boop" }: ButtonProps) => {
+  return <button onClick={() => alert(message)}>Boop</button>;
 };
