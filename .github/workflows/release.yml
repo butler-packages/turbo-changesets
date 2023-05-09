@@ -44,4 +44,4 @@ jobs:
           commit: "chore(release): release react-ui"
           publish: pnpm publish-packages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PUBLISHER_TOKEN }}
