@@ -7,5 +7,5 @@ export interface ButtonProps {
 }
 
 export const Button = ({ message = "boop" }: ButtonProps) => {
-  return <button onClick={() => alert(message)}>Boop</button>;
+  return <button onClick={() => alert(message)}>Button!</button>;
 };
