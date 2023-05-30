@@ -1,5 +1,11 @@
 # docs
 
+## 1.0.3
+
+### Patch Changes
+
+- 5144e11: fix: change importing path
+
 ## 1.0.2
 
 ### Patch Changes
