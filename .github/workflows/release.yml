@@ -30,17 +30,17 @@ jobs:
 
       - name: Creating .npmrc
         env:
-          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          PUBLISHER_TOKEN: ${{ secrets.PUBLISHER_TOKEN }}
         run: |
           cat << EOF > "$HOME/.npmrc"
-          //npm.pkg.github.com/:_authToken=$AUTH_TOKEN
+          //npm.pkg.github.com/:_authToken=$PUBLISHER_TOKEN
           EOF
 
       - name: Create Release Pull Request or Publish to github registry
         id: changesets
         uses: changesets/action@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PUBLISHER_TOKEN }}
         with:
           title: "chore(release): release react-ui"
           commit: "chore(release): release react-ui"
