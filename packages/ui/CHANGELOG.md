@@ -1,5 +1,11 @@
 # ui
 
+## 0.0.2
+
+### Patch Changes
+
+- ded234d: chore: update test
+
 ## 1.0.0
 
 ### Major Changes
